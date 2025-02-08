@@ -1,0 +1,74 @@
+
+.square{
+	background-color:purple;
+	width:200px;
+	height:200px;
+	animation: colorChange 5s infinite;
+}
+@keyframes colorChange{
+	0%{background-color:red}
+	25%{background-color: pink;}
+	50%{background-color: green;}
+	75%{background-color: yellow;}
+	100%{background-color: black;}
+	
+	
+}
+div{
+	width:100px;
+	height:100px;
+	background-color:red;
+	animation-name:example;
+	animation-duration:4s;
+}
+@KEYFRAMES SVGCOLORCHANGE{
+	25%{fill:pink;}
+	50%{fill:green;}
+	75%{fill:yellow;}
+	100%{fill:black;}
+}
+.svg-square{
+	background-color:purple;
+	animation: colorChange 7s infinite;
+	height:250px;
+	width:250px;
+}
+
+.ball{
+	width:50px;
+	height:50px;
+	background-color:red;
+	border-radius:50%;
+	position:absolute;
+	animation: bounce 5s infinite,colorChange 5s infinite;
+}
+
+@keyframes bounce{
+	0%,100%{
+		top:0;
+		left:50%;
+		transform:translate(-50%,0);
+	}
+	25%{
+		right:50%;
+		center:100%;
+		transform:translate(-100%,-50%);
+	}
+	50%{
+		bottom:0;
+		center:50%;
+		transform:translate(-50%,-100%);
+	}
+	75%{
+		left:50%;
+		center:100%;
+		transform:translate(0,-50%);
+	}
+	
+}
+@keyframes colorChange{
+	0%,100%{background-color:red;}
+	25%{background-color:blue;}
+	50%{background-color:green;}
+	75%{background-color:yellow;}
+}

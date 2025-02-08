@@ -1,0 +1,13 @@
+
+@KEYFRAMES SVGCOLORCHANGE{
+	25%{fill:pink;}
+	50%{fill:green;}
+	75%{fill:yellow;}
+	100%{fill:black;}
+}
+.svg-square{
+	background-color:purple;
+	animation: colorChange 7s infinite;
+	height:250px;
+	width:250px;
+}
